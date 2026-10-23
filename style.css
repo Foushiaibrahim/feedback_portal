@@ -1,0 +1,137 @@
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #fff8e7);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    color: #444;
+}
+
+/* Heading */
+h1 {
+    color: #d63384;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Feedback form card */
+form {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(214, 51, 132, 0.12);
+}
+
+/* Form labels */
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #70405a;
+}
+
+/* Input fields and dropdowns */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e8c8d8;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 18px;
+    background-color: #fffafd;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 5px rgba(214, 51, 132, 0.2);
+}
+
+/* Text area */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: #d63384;
+    color: white;
+    margin-right: 8px;
+}
+
+button[type="submit"]:hover {
+    background-color: #b8256c;
+    transform: translateY(-2px);
+}
+
+/* Reset button */
+button[type="reset"] {
+    background-color: #fce4ec;
+    color: #ad1457;
+}
+
+button[type="reset"]:hover {
+    background-color: #f8bbd0;
+}
+
+/* Success or error message */
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #198754;
+}
+
+/* Mobile responsive design */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 22px;
+    }
+
+    button {
+        margin-bottom: 8px;
+    }
+}
